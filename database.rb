@@ -1,5 +1,5 @@
-#!/usr/bin/env ruby
 
+require './contact'
 class Database
   @contacts = []
   @id = 1000
@@ -16,6 +16,6 @@ class Database
 end
 
 
-contact = Contact.new
+contact = Contact.new("john", "smith", "stuff", "string4")
 Database.add_contact(contact)
 Database.contacts

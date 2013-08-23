@@ -1,9 +1,8 @@
-#!/usr/bin/env ruby
 
-require './database'
+
 
 class Contact
-	 #attr_accessor :id, :email	
+	 attr_accessor :id, :email	
 
 	#^^ that thing means we don't have to write the next bit
 	#setter

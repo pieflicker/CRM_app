@@ -1,7 +1,8 @@
-#!/usr/bin/env ruby
+
 
 #CRM app
 require './contact' 
+require './database'
  
 
 class CRM
@@ -18,7 +19,7 @@ class CRM
 	end
 
 	def main_menu
-		print_main_menus
+		print_main_menu
 		user_selected = gets.chomp
 		user_selected.downcase!
 		call_option(user_selected)
