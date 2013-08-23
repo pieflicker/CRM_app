@@ -1,32 +1,24 @@
 #!/usr/bin/env ruby
-class contact
+
+require './database'
+
+class Contact
+	 #attr_accessor :id, :email	
+
+	#^^ that thing means we don't have to write the next bit
+	#setter
+	#def id=()
+	#	@id = 
+	#getter
+	#def id
+	#	@id #+ 1000
+	#end
+
+	#end
 	def initialize(first_name, last_name, email, note)
     @first_name = first_name
     @last_name = last_name
     @email = email
     @note = note
   	end
-
-
-	def add_new_contact
-		print "Enter the first name: "
-		first_name=gets.chomp
-		print "Enter the last name: "
-		last_name=gets.chomp
-		print "Enter their email address: "
-		email=gets.chomp
-		print "Enter any notes: "
-		note=gets.chomp
-		contact=Contact.new(first_name, last_name, email, note)
-	end
-
-	# a getter (*get* the value of an attribute)
-  	def email
-    @email
-  	end
-
-  # a setter (*set* the value of an attribute)
-  	def note(note)
-    @note = note
-  	end
-end	
+end
